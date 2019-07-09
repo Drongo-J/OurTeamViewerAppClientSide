@@ -1,0 +1,18 @@
+﻿<Window x:Class="TeamViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeamViewer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="100" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid Background="LightBlue">
+        <StackPanel Orientation="Horizontal">
+            <TextBox Text="{Binding IpAddress}" 
+                     Background="LightBlue"
+                     Width="150" Height="50" FontSize="18"></TextBox>
+            <Button Width="140" Height="50" Content="Connect" FontSize="18" Background="LightBlue"
+                    Command="{Binding ConnectCommand}"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
