@@ -8,7 +8,7 @@ namespace TeamViewer.AdditionalClasses
 {
    public static class NetworkProtocol
     {
-        public static string IPAddress= "192.168.1.103";
-        public static int TcpPort = 25656;
+        public static string IPAddress= "10.1.18.39";
+        public static int TcpPort = 27001;
     }
 }

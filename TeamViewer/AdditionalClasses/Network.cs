@@ -41,6 +41,7 @@ namespace TeamViewer.AdditionalClasses
                 int i = 3;
                 while (true)
                 {
+                    Task.Delay(50);
                     ScreenShot screenShot = new ScreenShot();
                     var imagepath = screenShot.GetScreenShotPath(++i);
                     ImageHelper imageHelper = new ImageHelper();
